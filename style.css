@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #f4f4f4;
+    --tertiary-color: #5f9ea0;
+    --quaternary-color: #5050ff;
+    --quinary-color: #ff5050;
+}
+
+html {
+    font-family: sans-serif;
+    font-size: 10px;
+    background: linear-gradient(18deg, rgb(17, 200, 220), rgb(90, 67, 121));
+    height: 100vh;
+}
+
+.container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+}
+
+h1 {
+    margin: 3rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+.input-container {
+    width: 100%;
+    background-color: var(--primary-color);
+    border-radius: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#ToDoInput {
+    width: 80%;
+    margin: 0 1rem;
+    font-size: 2rem;
+    height: 3.5rem;
+    border: 0px solid transparent;
+    outline: none;
+}
+
+.fa-plus-square {
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+.fa-plus-square:hover {
+    color: var(--quaternary-color);
+}
+
+#toDoList {
+    font-size: 2rem;
+}
+
+.newDivClass {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    background-color: var(--primary-color);
+}
+
+.newSpan {
+    flex: 1;
+    overflow-wrap: anywhere;
+}
+
+.fa-square {
+    color: var(--tertiary-color);
+}
+
+.fa-check-square {
+    color: var(--tertiary-color);
+}
+
+.fa-square:hover {
+    color: var(--tertiary-color);
+}
+
+
+.fa-trash {
+    margin: 0 0.3rem;
+}
+
+.fa-trash:hover {
+    color: var(--quinary-color)
+}
+
+.span-line-through {
+    text-decoration: line-through;
+}
+
+i:hover {
+    cursor: pointer;
+}
